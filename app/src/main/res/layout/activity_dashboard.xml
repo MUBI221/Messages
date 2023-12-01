@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:stackFromBottom="true"
+        tools:listitem="@layout/msg_listview"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/messageBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/message_box_background"
+            android:hint="Text Message"
+            android:inputType="text"
+            android:maxLines="5"
+            android:minLines="1"
+            android:paddingVertical="10dp"
+            android:paddingLeft="30dp" />
+
+        <ImageView
+            android:id="@+id/sendMsg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/uparrow"
+            android:layout_gravity="end|center_vertical"/>
+
+    </FrameLayout>
+
+</LinearLayout>
